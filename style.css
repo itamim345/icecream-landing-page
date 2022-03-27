@@ -9,6 +9,22 @@ body{
     width: 80%;
     margin: 0 auto;
 }
+h2 {
+    font-size: 32px;
+    border: 2px solid;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px;
+}
+.btn{
+    background-color: tomato;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
 
 /* ------------- header area design start -----------*/
 .header{
@@ -29,49 +45,68 @@ body{
     color: white;
     margin: 0 5px;
 }
-.header-main-content{
+.header-fav-flavour-content{
     display: flex;
     align-items: center;
     padding-bottom: 50px;
 }
-.header-main-content h1{
+.header-fav-flavour-content h1{
     margin: 0;
     font-size: 48px;
 }
-.header-main-content p {
+.header-fav-flavour-content p {
     font-size: 21px;;
-}
-.header-main-content .btn{
-    background-color: #3882f6;
-    border-radius: 4px;
-    border: none;
-    color: #fff;
-    padding: 5px 15px;
-    font-size: 18px;
 }
 .header-right img {
     width: 100%;
 }
 /* ------------- header area design end -----------*/
 
-/* --------------- main area design start ------------------*/
-.main{
+/* --------------- fav-flavour area design start ------------------*/
+.fav-flavour{
     text-align: center;
     padding: 50px 0;
 }
-.main h2 {
-    font-size: 32px;
-}
-.img-area{
+.fav-items{
     display: flex;
     gap: 20px;
 }
-.single-img-area img{
+.single-fav-item img{
     width: 100%;
     border-radius: 10px;
 }
 
-/* --------------- main area design end ------------------*/
+/* --------------- fav-flavour area design end ------------------*/
+
+/* ---------------choose-your-items area design start--------------- */
+#choose-your-items {
+    text-align: center;
+    padding: 50px 0;
+    background: #f5f6fa;
+}
+.choosen-items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.choosen-items img{
+    width: 100%;
+    border-radius: 10px;
+}
+.single-choosen-item{
+    border: 3px solid salmon;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+/* ---------------choose-your-items area design end----------------- */
+
+/* --------------------surprise-us section design start----------------- */
+#surprise-us {
+    padding: 50px 0;
+    text-align: center;
+    background: #ff4747c9;
+}
+/* --------------------surprise-us section design start----------------- */
 
 /* --------------- qoutes area design start ------------------*/
 .qoutes-area{
@@ -129,6 +164,7 @@ footer{
     text-align: center;
     color : #fff;
 }
+
 footer a{
     color : #3882F6;
     text-decoration: none;
