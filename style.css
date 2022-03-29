@@ -62,7 +62,7 @@ h2 {
 }
 .logo img{
     width: 55px;
-    height: 55px;
+    height: 40px;
 }
 .nav-area{
     display: flex;
@@ -265,3 +265,40 @@ footer{
     color: #BB001B;
 }
 /* --------------- footer area design end ------------------*/
+
+
+/* responsive css */
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+        padding: 0 5%;
+    }
+    .nav-area{
+        padding-bottom: 10px;
+        flex-direction: column;
+    }
+    .header-fav-flavour-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-left{
+        width: 100%;
+    }
+    .header-right{
+        width: 80%;
+    }
+    .fav-items{
+        flex-direction: column;
+    }
+    .choosen-items {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .slot-book-form form {
+        width: 90%;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+
+
+}
